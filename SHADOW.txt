@@ -1,0 +1,4 @@
+shadow prebuilt repo: jarjar (host)
+  upstream: external/jarjar
+  branch: universal
+  date: 2026-10-24

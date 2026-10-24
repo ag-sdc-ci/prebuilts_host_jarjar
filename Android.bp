@@ -1,0 +1,29 @@
+package {
+    default_applicable_licenses: ["external_jarjar_license"],
+}
+
+license {
+    name: "external_jarjar_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+    ],
+    license_text: [
+        "NOTICE",
+    ],
+}
+
+java_import_host {
+    name: "jarjar",
+    jars: ["lib/jarjar.jar"],
+}
+
+java_import_host {
+    name: "jarjar-maven-plugin-api",
+    jars: ["lib/maven-plugin-api.jar"],
+}
+
+java_import_host {
+    name: "jarjar-apache-ant",
+    jars: ["lib/apache-ant-1.9.4.jar"],
+}
