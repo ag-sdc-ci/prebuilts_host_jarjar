@@ -16,6 +16,7 @@ license {
 java_import_host {
     name: "jarjar",
     jars: ["lib/jarjar.jar"],
+    installable: true,
 }
 
 java_import_host {
